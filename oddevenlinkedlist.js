@@ -39,7 +39,7 @@ head.next.next.next.next = new Node(5)
 
 let odd = head
 let even = head.next
-//Keep the beginning of the evens for reference to connect later
+//Keep the head of the evens for reference to connect later
 let evenHead = even 
 
 //Don't have to check the odds since it'll always be behind the evens
@@ -54,6 +54,6 @@ while (even !== null && even.next !== null) {
     even = even.next
 }
 
-//connect the odd tail w/ the even head
+//Connect the odd tail w/ the even head
 odd.next = evenHead 
 return head
